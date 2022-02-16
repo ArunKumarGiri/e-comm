@@ -1,0 +1,32 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Buy Now{% endblock title %}
+{% block main-content %}
+
+<h1>SELECT YOUR PAYMENT OPTION</h1>
+
+<form method="POST" action="buy-now">
+  <label for="cars">PRODUCT QUANTITY:</label>
+<select name="PAYMENT">
+  <option value="COD">1</option>
+  <option value="DC">2</option>
+  <option value="CC">3</option>
+  <option value="NB">4</option>
+  <option value="UPI">5</option>
+</select>
+
+<label for="cars">PAYMENT DETAILS:</label>
+<select name="PAYMENT">
+  <option value="COD">CASH ON DELIVERY</option>
+  <option value="DC">DEBIT CARD</option>
+  <option value="CC">CARDIT CARD</option>
+  <option value="NB">NET BANKING</option>
+  <option value="UPI">UPI</option>
+
+</select>
+<br>
+<input type="button" value="submit" class="btn btn-primary">
+</form>
+
+
+{% endblock main-content %}
